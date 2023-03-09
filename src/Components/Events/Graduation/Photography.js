@@ -111,7 +111,7 @@ function Photography() {
 
         {/* third card */}
 
-        <Card style={{ margin: "2rem", width: "18rem", height: "20rem" }}>
+         <Card style={{ margin: "2rem", width: "18rem", height: "20rem" }}>
           <Card.Title style={{ textAlign: "center", marginTop: "5px" }}>
             Eric studios
           </Card.Title>
@@ -156,9 +156,6 @@ function Photography() {
             <Button variant="primary">Book a Session</Button>
           </Card.Body>
         </Card>
-
-        {/* card 4 */}
-        
    
       </div>
     </div>

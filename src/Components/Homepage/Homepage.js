@@ -6,18 +6,17 @@ import Sidebar from "../../Components/Sidebar/Sidebar";
 
 function Homepage() {
   return (
-    <Container>
+    <Container fluid>
       <Row>
-        <Col xs={3} md={3}>
+        <Col xs={12} md={3}>
           <Sidebar />
         </Col>
-        <Col xs={4} md={4}>
+        <Col xs={12} md={6}>
           <Carousel
             variant="dark"
             style={{
               marginTop: "20px",
               height: "325px",
-              width: "600px",
             }}
           >
             <Carousel.Item>
@@ -60,8 +59,8 @@ function Homepage() {
             </Carousel.Item>
           </Carousel>
         </Col>
-        <Col xs={2} md={3}>
-            <h1>ddds</h1>
+        <Col xs={12} md={3}>
+          <h1>ddds</h1>
           sell on sherehe garage
         </Col>
       </Row>
