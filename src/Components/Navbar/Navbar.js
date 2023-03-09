@@ -33,7 +33,6 @@ function HomeNavbar() {
                 >
                   <h3 className="mb-0 mr-3 text-center">Sherehe Garage</h3>
 
-
                   <Navbar.Brand href="/" className="mr-3">
                     <img
                       src={logo}
@@ -59,13 +58,13 @@ function HomeNavbar() {
               <Nav className="me-auto my-2 my-lg-0" navbarScroll>
                 <Nav.Link href="/">Home</Nav.Link>
 
-                <Form className="d-flex">
+                <Form className="d-flex flex-column flex-sm-row align-items-center">
                   <Form.Control
                     type="search"
                     placeholder="Search events here ...."
-                    className="me-2"
+                    className="me-2 mb-2 mb-sm-0"
                     aria-label="Search"
-                    style={{ width: "400px", marginLeft: "20px" }}
+                    style={{ width: "100%" }}
                   />
                   <Button variant="outline-info">Search</Button>
                 </Form>
