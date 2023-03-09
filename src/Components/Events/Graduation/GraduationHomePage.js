@@ -7,8 +7,9 @@ function GraduationHomePage() {
       style={{
         height: "100vh",
         backgroundImage: `url(https://images.unsplash.com/photo-1602153883150-a442f874f839?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60)`, // set the background image
-        backgroundRepeat: "no-repeat",
+        backgroundRepeat: "repeat",
         backgroundSize: "cover",
+        height: "auto"
       }}
     >
       <GraduationNavbar />

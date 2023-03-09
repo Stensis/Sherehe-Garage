@@ -14,7 +14,7 @@ function App() {
         backgroundImage: `url(${background2})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "100vh"
+        height: "auto"
       }}
     >
       <HomeNavbar />

@@ -52,7 +52,7 @@ function HomeNavbar() {
             </div>
           </Col>
 
-          <Col md={9}>
+          <Col md={9} className="mt-2 d-flex">
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="me-auto my-2 my-lg-0" navbarScroll>
@@ -61,10 +61,11 @@ function HomeNavbar() {
                 <Form className="d-flex flex-column flex-sm-row align-items-center">
                   <Form.Control
                     type="search"
+                    
                     placeholder="Search events here ...."
                     className="me-2 mb-2 mb-sm-0"
                     aria-label="Search"
-                    style={{ width: "100%" }}
+                    style={{ width: "340px",borderRadius:"13px",border:"1px solid #72ddf7" }}
                   />
                   <Button variant="outline-info">Search</Button>
                 </Form>

@@ -10,7 +10,7 @@ function GraduationVenues() {
     <div style={{ padding: "20px" }}>
       {/* Page heading */}
       <h2 style={{ textAlign: "center", marginTop: "5px" }}>
-        Graduation Venues{" "}
+        Venues{" "}
         <a
           href="/graduationHomePage"
           style={{

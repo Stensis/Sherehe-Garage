@@ -18,7 +18,7 @@ function GraduationNavbar() {
     >
       <Nav.Item className="mt-3">
         <NavLink
-          className="text-decoration-none"
+          className="text-decoration-none "
           to="/venue"
           onClick={() => (window.location.href = "/venues")}
         >
