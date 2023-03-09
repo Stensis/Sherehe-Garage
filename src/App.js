@@ -1,15 +1,15 @@
+import { Routes, Route } from "react-router-dom";
 import Homepage from "./Components/Homepage/Homepage";
 import HomeNavbar from "./Components/Navbar/Navbar";
+import GraduationHomePage from "../src/Components/Events/Graduation/GraduationHomePage";
+import Venues from "./Components/Events/Graduation/Venues";
+// import ContactPage from "./Components/Contact/ContactPage";
 import background2 from "../src/Assets/background2.avif";
-import Event from "./Components/Events/Event";
 
 function App() {
   return (
     <div
       style={{
-        // backgroundImage:
-        //   "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29sb3IlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
-
         backgroundImage: `url(${background2})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -17,8 +17,12 @@ function App() {
       }}
     >
       <HomeNavbar />
-      <Homepage />
-      <Event/>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/graduationHomePage" element={<GraduationHomePage />} />
+        <Route path="/venues" element={<Venues />} />
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
+      </Routes>
     </div>
   );
 }

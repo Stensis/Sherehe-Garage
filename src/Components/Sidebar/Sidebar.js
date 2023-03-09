@@ -1,4 +1,5 @@
 import { Nav, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -10,7 +11,7 @@ function Sidebar() {
         width: "250px",
         backgroundColor: "#FFBC42",
         marginTop: "15px",
-        
+
         lineHeight: 2.3
       }}
       expand="lg"
@@ -18,14 +19,35 @@ function Sidebar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="flex-column" style={{ marginLeft: "30px" }}>
-          <Nav.Link href="/graduation">Graduation</Nav.Link>
-          <Nav.Link href="/birthday">BirthDay</Nav.Link>
-          <Nav.Link href="/wedding">Wedding</Nav.Link>
-          <Nav.Link href="/burials">Burials</Nav.Link>
-          <Nav.Link href="/babyshower">Baby Shower</Nav.Link>
-          <Nav.Link href="/cooperateEvents">Cooperate Events</Nav.Link>
-          <Nav.Link href="/bridalShower">Bridal Shower</Nav.Link>
-          <Nav.Link href="/anniversaries">Anniversary</Nav.Link>
+          <h3>Events</h3>
+          <NavLink
+            to="/graduation"
+            onClick={() => (window.location.href = "/graduationHomePage")}
+          >
+            Graduation
+          </NavLink>
+
+          <NavLink to="/birthday" activeClassName="active">
+            BirthDay
+          </NavLink>
+          <NavLink to="/wedding" activeClassName="active">
+            Wedding
+          </NavLink>
+          <NavLink to="/burials" activeClassName="active">
+            Burials
+          </NavLink>
+          <NavLink to="/babyshower" activeClassName="active">
+            Baby Shower
+          </NavLink>
+          <NavLink to="/cooperateEvents" activeClassName="active">
+            Cooperate Events
+          </NavLink>
+          <NavLink to="/bridalShower" activeClassName="active">
+            Bridal Shower
+          </NavLink>
+          <NavLink to="/anniversaries" activeClassName="active">
+            Anniversary
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
