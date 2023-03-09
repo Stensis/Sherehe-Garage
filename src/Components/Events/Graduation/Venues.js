@@ -19,7 +19,7 @@ function GraduationVenues() {
             textDecoration: "none"
           }}
         >
-          X
+          Go Back
         </a>
       </h2>
 

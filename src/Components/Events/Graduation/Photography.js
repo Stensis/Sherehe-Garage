@@ -17,7 +17,7 @@ function Photography() {
               textDecoration: "none"
             }}
           >
-            X
+            Go Back
           </a>
         </h3>
 
