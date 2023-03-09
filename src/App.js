@@ -5,6 +5,7 @@ import GraduationHomePage from "../src/Components/Events/Graduation/GraduationHo
 import Venues from "./Components/Events/Graduation/Venues";
 // import ContactPage from "./Components/Contact/ContactPage";
 import background2 from "../src/Assets/background2.avif";
+import Photography from "./Components/Events/Graduation/Photography";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
       <HomeNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        {/* graduation event  routes */}
         <Route path="/graduationHomePage" element={<GraduationHomePage />} />
         <Route path="/venues" element={<Venues />} />
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/photography" element={<Photography />} />
       </Routes>
     </div>
   );
