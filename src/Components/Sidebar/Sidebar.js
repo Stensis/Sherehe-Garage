@@ -8,7 +8,7 @@ function Sidebar() {
         border: "1px solid black",
         fontWeight: "bold",
         borderRadius: "15px",
-        backgroundColor: "#FFBC42",
+        backgroundColor: "#e7c6ff",
         marginTop: "15px",
         lineHeight: 1.6
       }}
@@ -26,7 +26,7 @@ function Sidebar() {
           }}
         >
           <h3
-            style={{ textDecoration: "underline",textAlign: "center" }}
+            style={{ textDecoration: "underline", textAlign: "center" }}
             className="me-lg-auto mb-3 pb-3"
           >
             Events
@@ -38,39 +38,51 @@ function Sidebar() {
           >
             Graduation
           </NavLink>
-          <NavLink to="/birthday" activeClassName="active" className="nav-link">
+          <NavLink
+            to="/birthday"
+            onClick={() => (window.location.href = "/birthdayHomePage")}
+            className="nav-link"
+          >
             BirthDay
           </NavLink>
-          <NavLink to="/wedding" activeClassName="active" className="nav-link">
+          <NavLink
+            to="/wedding"
+            onClick={() => (window.location.href = "/weddingHomePage")}
+            className="nav-link"
+          >
             Wedding
           </NavLink>
-          <NavLink to="/burials" activeClassName="active" className="nav-link">
+          <NavLink
+            to="/burials"
+            onClick={() => (window.location.href = "/burialsHomePage")}
+            className="nav-link"
+          >
             Burials
           </NavLink>
           <NavLink
             to="/babyshower"
-            activeClassName="active"
+            onClick={() => (window.location.href = "/babyShowerHomePage")}
             className="nav-link"
           >
             Baby Shower
           </NavLink>
           <NavLink
-            to="/cooperateEvents"
-            activeClassName="active"
+            to="/cooperate"
+            onClick={() => (window.location.href = "/cooperateHomePage")}
             className="nav-link"
           >
             Cooperate Events
           </NavLink>
           <NavLink
             to="/bridalShower"
-            activeClassName="active"
+            onClick={() => (window.location.href = "/bridalHomePage")}
             className="nav-link"
           >
             Bridal Shower
           </NavLink>
           <NavLink
             to="/anniversaries"
-            activeClassName="active"
+            onClick={() => (window.location.href = "/anniversaryHomePage")}
             className="nav-link"
           >
             Anniversary

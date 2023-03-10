@@ -12,7 +12,7 @@ import logo from "../../Assets/LOGO.png";
 function HomeNavbar() {
   return (
     <Navbar
-      style={{ marginTop: "1px", backgroundColor: "#FFBC42" }}
+      style={{ marginTop: "1px", backgroundColor: "#dab6fc"  }}
       expand="lg"
     >
       <Container fluid>
@@ -61,13 +61,23 @@ function HomeNavbar() {
                 <Form className="d-flex flex-column flex-sm-row align-items-center">
                   <Form.Control
                     type="search"
-                    
                     placeholder="Search events here ...."
                     className="me-2 mb-2 mb-sm-0"
                     aria-label="Search"
-                    style={{ width: "340px",borderRadius:"13px",border:"1px solid #72ddf7" }}
+                    style={{
+                      width: "100%",
+                      maxWidth: "340px",
+                      borderRadius: "13px",
+                      border: "1px solid #72ddf7"
+                    }}
                   />
-                  <Button variant="outline-info">Search</Button>
+                  <Button
+                    variant="outline-info"
+                    className="mt-2 mt-sm-0 ms-sm-2"
+                    style={{ minWidth: "80px" }}
+                  >
+                    Search
+                  </Button>
                 </Form>
 
                 <NavDropdown
