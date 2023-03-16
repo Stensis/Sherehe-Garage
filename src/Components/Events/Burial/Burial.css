@@ -1,0 +1,68 @@
+/* Set styles for the button container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  /* Set common styles for all buttons */
+  .button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Set styles for the "Casket Selection" button */
+  .button-casket {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Set styles for the "Body Preparation" button */
+  .button-preparation {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  /* Set styles for the "Funeral Ceremony" button */
+  .button-funeral {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Set styles for the "Graveside Service" button */
+  .button-graveside {
+    background-color: #555555;
+    color: white;
+  }
+  
+  /* Set styles for the "Memorialization" button */
+  .button-memorialization {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  /* Set styles for the "Transportation" button */
+  .button-transportation {
+    background-color: #9b4dca;
+    color: white;
+  }
+  
+  /* Set styles for the "Legal Documentation" button */
+  .button-documentation {
+    background-color: #e91e63;
+    color: white;
+  }
+  
+  /* Change the background color on hover */
+  .button-container button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  

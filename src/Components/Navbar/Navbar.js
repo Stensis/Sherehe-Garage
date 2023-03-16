@@ -1,127 +1,143 @@
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from "react";
 
-import logo from "../../Assets/LOGO.png";
-
-function HomeNavbar() {
+function Navbar() {
   return (
-    <Navbar
-      style={{ marginTop: "1px", backgroundColor: "#dab6fc"  }}
-      expand="lg"
+    <nav
+      class="navbar navbar-expand-lg justify-content-space-between"
+      style={{ backgroundColor: "#8626A6" }}
     >
-      <Container fluid>
-        <Row>
-          <Col md={3} className="d-flex align-items-center">
-            <div className="d-flex align-items-center">
-              <div className="d-flex align-items-center">
-                <Nav.Link
-                  href="/"
-                  className="d-flex align-items-center"
-                  style={{
-                    border: "2px solid black",
-                    fontWeight: "bold",
-                    borderRadius: "5px",
-                    fontSize: "1.5em",
-                    marginLeft: "5px"
-                  }}
-                >
-                  <h3 className="mb-0 mr-3 text-center">Sherehe Garage</h3>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" style={{ color: "#ffffff" }}>
+          Sherehe Garage
+        </a>
 
-                  <Navbar.Brand href="/" className="mr-3">
-                    <img
-                      src={logo}
-                      alt="logo"
-                      style={{
-                        marginTop: "10px",
-                        marginBottom: "10px",
-                        height: "50px",
-                        width: "70px",
-                        border: "1px solid dark",
-                        borderRadius: "20px"
-                      }}
-                    />
-                  </Navbar.Brand>
-                </Nav.Link>
-              </div>
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+          <form class="d-flex mt-3" role="search">
+            <div class="input-group">
+              <input
+                class="form-control me-2 border-opacity-75 text-black mt-2"
+                type="search"
+                placeholder="Search available events here..."
+                aria-label="Search"
+                style={{ backgroundColor: "#D59BE9", height: "42px" }}
+              />
+              <button
+                class="btn"
+                type="submit"
+                style={{ backgroundColor: "#F1DEF8" }}
+              >
+                Search
+              </button>
             </div>
-          </Col>
+          </form>
+        </div>
 
-          <Col md={9} className="mt-2 d-flex">
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-                <Nav.Link href="/">Home</Nav.Link>
+        <div class="d-flex justify-content-space-between">
+          <ul
+            class="nav me-auto mb-2 mb-lg-0 justify-content-space-between"
+            style={{ width: "100%", justifyContent: "space-between" }}
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/"
+                style={{ color: "#ffffff" }}
+              >
+                Home
+              </a>
+            </li>
 
-                <Form className="d-flex flex-column flex-sm-row align-items-center">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search events here ...."
-                    className="me-2 mb-2 mb-sm-0"
-                    aria-label="Search"
-                    style={{
-                      width: "100%",
-                      maxWidth: "340px",
-                      borderRadius: "13px",
-                      border: "1px solid #72ddf7"
-                    }}
-                  />
-                  <Button
-                    variant="outline-info"
-                    className="mt-2 mt-sm-0 ms-sm-2"
-                    style={{ minWidth: "80px" }}
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style={{ color: "#ffffff" }}
+              >
+                Account
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/"
+                    style={{ color: "#000000" }}
                   >
-                    Search
-                  </Button>
-                </Form>
-
-                <NavDropdown
-                  style={{ marginLeft: "20px" }}
-                  title="Account"
-                  id="navbarScrollingDropdown"
-                >
-                  <NavDropdown.Item
-                    href="/birthday"
-                    style={{
-                      border: "3px solid white",
-                      borderRadius: "10px"
-                    }}
+                    Sign In
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/"
+                    style={{ color: "#000000" }}
                   >
-                    <Button variant="warning" style={{ width: "125px" }}>
-                      Sign In
-                    </Button>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/account">
-                    My Account
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/events">My Events</NavDropdown.Item>
-                </NavDropdown>
+                    My Profile
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none"
+                    href="/"
+                    style={{ color: "#000000" }}
+                  >
+                    My Events
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-                <NavDropdown title=" Help ? " id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="/birthday">About Us</NavDropdown.Item>
-                  <NavDropdown.Item href="/wedding">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style={{ color: "#ffffff" }}
+              >
+                Help
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end text-center">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/"
+                    style={{ color: "#000000" }}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/"
+                    style={{ color: "#000000" }}
+                  >
                     Contact Us
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/anniversary">
-                    <Button variant="warning" style={{ width: "125px" }}>
-                      Live Chat
-                    </Button>
-                  </NavDropdown.Item>
-                </NavDropdown>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-                <Nav.Link href="/">Logout</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Col>
-        </Row>
-      </Container>
-    </Navbar>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/"
+                style={{ color: "#ffffff" }}
+              >
+                Log Out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
-export default HomeNavbar;
+export default Navbar;

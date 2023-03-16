@@ -1,0 +1,64 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button-planning {
+    background-color: #F7941E;
+    color: #fff;
+  }
+  
+  .button-catering {
+    background-color: #F660AB;
+    color: #fff;
+  }
+  
+  .button-venue {
+    background-color: #8AC926;
+    color: #fff;
+  }
+  
+  .button-entertainment {
+    background-color: #FFCA3A;
+    color: #fff;
+  }
+  
+  .button-photography {
+    background-color: #6A4C93;
+    color: #fff;
+  }
+  
+  .button-supplies {
+    background-color: #1D3557;
+    color: #fff;
+  }
+  
+  .button-staffing {
+    background-color: #E55934;
+    color: #fff;
+  }
+  
+  .button-favors {
+    background-color: #3D405B;
+    color: #fff;
+  }
+  
